@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783076606998",
+    "project_id": "trabalho3-630b3",
+    "storage_bucket": "trabalho3-630b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783076606998:android:f3e674084d6f20438a6137",
+        "android_client_info": {
+          "package_name": "com.example.patrimonio_investimentos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCSqiVyy9bHPPBZL-u3VWy4Jzbjgzhdu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
