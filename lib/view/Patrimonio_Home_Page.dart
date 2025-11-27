@@ -318,7 +318,7 @@ class _PatrimonioHomePageState extends State<PatrimonioHomePage> {
                     patrimonio.descricao,
                     style: const TextStyle(
                       fontSize: 10,
-                      color: CoresApp.textoClaro54,
+                      color: CoresApp.fundoEscuro,
                       fontWeight: FontWeight.w600,
                       letterSpacing: 1.2,
                     ),

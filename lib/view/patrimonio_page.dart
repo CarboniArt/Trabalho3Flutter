@@ -431,7 +431,7 @@ class _PatrimonioPageState extends State<PatrimonioPage> {
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: CoresApp.fundoEscuro),
         labelText: label,
-        labelStyle: const TextStyle(color: CoresApp.textoClaro54),
+        labelStyle: const TextStyle(color: CoresApp.fundoEscuro),
         filled: true,
         fillColor: CoresApp.textoBranco,
         enabledBorder: OutlineInputBorder(
