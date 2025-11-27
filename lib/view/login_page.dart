@@ -101,16 +101,38 @@ class _LoginPageState extends State<LoginPage> {
                         onTap: () async {
                           final email = userNameController.text.trim();
                           if (email.isEmpty) {
-                            _showErrorDialog(
-                              'Por favor, digite seu email para recuperar a senha',
+                            showDialog(
+                              context: context,
+                              builder: (context) {
+                                return const AlertDialog(
+                                  title: Text("Recuperação de senha"),
+                                  content: Text(
+                                    "Por favor, digite seu email para recuperar a senha",
+                                  ),
+                                );
+                              },
                             );
                             return;
                           }
                           try {
                             await _authService.sendPasswordResetEmail(email);
                             if (!mounted) return;
-                            _showErrorDialog(
-                              'Email de recuperação enviado! Verifique sua caixa de entrada.',
+                            showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: const Text("Recuperação de senha"),
+                                  content: const Text(
+                                    "Email de recuperação enviado! Verifique sua caixa de entrada.",
+                                  ),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () => Navigator.pop(context),
+                                      child: const Text("OK"),
+                                    ),
+                                  ],
+                                );
+                              },
                             );
                           } catch (e) {
                             if (!mounted) return;
