@@ -73,7 +73,18 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               children: <Widget>[
                 const SizedBox(height: 50),
-                const Icon(Icons.account_balance_wallet, size: 100),
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: const Icon(
+                    Icons.show_chart,
+                    size: 80,
+                    color: Colors.white,
+                  ),
+                ),
                 const SizedBox(height: 50),
                 Text(
                   'Seja bem Vindo!',
